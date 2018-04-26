@@ -11,7 +11,7 @@ const config = {
     default: 'arcade',
     arcade: {
       gravity: {
-        y: 300,
+        y: 200,
       },
       debug: false,
     },
@@ -19,7 +19,7 @@ const config = {
   scene: [GameScene],
 };
 
-(() => new Phaser.Game(config))();
+var game = new Phaser.Game(config);
 
 if (module.hot) {
   module.hot.accept(() => {});
